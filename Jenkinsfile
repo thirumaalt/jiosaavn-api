@@ -9,7 +9,9 @@ pipeline {
   stages {
     stage('Clone Repository') {
       steps {
-        git 'https://github.com/thirumaalt/jiosaavn-api.git'
+        git branch: 'main', 
+            url: 'https://github.com/thirumaalt/jiosaavn-api.git', 
+            credentialsId: 'Git_Token'
       }
     }
 
