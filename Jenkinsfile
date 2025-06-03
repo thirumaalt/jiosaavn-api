@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Clone Repository') {
       steps {
-        git 'https://github.com/sumitkolhe/jiosaavn-api.git'
+        git 'https://github.com/thirumaalt/jiosaavn-api.git'
       }
     }
 
